@@ -1,11 +1,14 @@
 import React from 'react'
 import * as Yup from "yup"
 import { useFormik} from "formik"
-import Button from './Button'
-import Input from './Input'
-import Form from './Form'
+import Button from '../styles/Button'
+import Input from '../styles/Input'
+import Form from '../styles/Form'
+import LinkLogin from '../styles/LinkLogin'
+import { Link } from 'react-router-dom'
+import Title from '../styles/Title'
 
-export default function Signup() {
+export default function Register() {
 	const Formik = useFormik({
 	  initialValues: {
 		firstName: '',
@@ -33,7 +36,9 @@ export default function Signup() {
 	  },
 	});
 	return (
+		<div>
 	  <Form onSubmit={Formik.handleSubmit}>
+		  <Title>Create Account</Title>
 		<Input
 		  id="firstName"
 		  name="firstName"
@@ -68,8 +73,13 @@ export default function Signup() {
 		  onChange={Formik.handleChange}
 		  value={Formik.values.password}
 		/>
-		<Button type="submit">Sign Up </Button>
+		<Button type="submit">Register </Button>
+		<LinkLogin>
+			<p>Already have an account? <Link to="/login"> Login </Link> </p> 	
+		</LinkLogin>
 	  </Form>
+	  </div>
+	 
 	);
   };
 
