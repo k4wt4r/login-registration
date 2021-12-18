@@ -1,7 +1,7 @@
 import styled  from "styled-components"
 
 const LinkRegister = styled.div`
-	font-size: 10px;
+	font-size: 12px;
 	cursor: pointer;
 	color: black;
 

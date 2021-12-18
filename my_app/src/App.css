@@ -9,5 +9,14 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #155263;
 }
 
+.circle{
+	width: 20%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
+}

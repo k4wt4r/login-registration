@@ -9,6 +9,7 @@ const Button= styled.button`
 	margin: 9px;
 	padding: 0.25em 1em;
 	width: 90px;
+	margin-bottom: 30px;
 	height: 35px;
 `
 export default Button;

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Input = styled.input`
 	background: rgba(255, 255, 255, 0.15);
-	box-shadow: 0 4px 10px 0 #ff9a3c;
+	box-shadow: 1px 1px 3px #ff9a3c;
 	border-radius: 7px;
 	width: 60%;
 	margin: 10px;
@@ -16,7 +16,7 @@ const Input = styled.input`
 	font-weight: bold;
 	&:focus {
 		display: inline-block;
-		box-shadow: 0 0 0 0.1rem #b9abe0;
+		box-shadow: 0 0 0 0.03rem #ff9a3c;
 		backdrop-filter: blur(12rem);
 		border-radius: 0.5rem;
 	}

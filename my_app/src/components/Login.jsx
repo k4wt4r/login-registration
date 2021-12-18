@@ -26,8 +26,12 @@ export default function Login() {
 		}
 	});
 	return (
+		<div>
+	
+			
 		<Form onSubmit={formik.handleSubmit}>
-			<Title> Login </Title>
+	
+			<Title> Login to Your Account </Title>
 				<Input
 				id="email"
 				type="email"
@@ -42,12 +46,13 @@ export default function Login() {
 				value={formik.values.password}
 				type="password"
 				/>
-			<Button type="submit" className="btn-login">
+			<Button type="submit">
 				Log in
 			</Button>
 			<LinkRegister>
-			<p>don't have an account? <Link to="/register">register </Link> </p> 	
+			<p>Don't have an account? <Link to="/register">Register </Link> </p> 	
 			</LinkRegister>
 		</Form>
+		</div>
 	)
 }
